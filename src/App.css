@@ -101,6 +101,7 @@ label {
   display: flex;
   align-items: center;
   padding: 0rem 1rem;
+  box-sizing: border-box;
 }
 
 .checkbox {
@@ -145,8 +146,10 @@ label {
 .consent > div {
   display: flex;
   align-items: center;
+  gap: 1rem;
   
   padding: 0rem 0.5rem;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -191,8 +194,11 @@ label {
 
 @media screen and (max-width: 750px) {
   form {
-    width: 90%;
+    width: 25rem;
     height: fit-content;
+
+    padding: 1rem 1rem;
+    margin: 3rem 0rem;
   }
 
   .input-grid {
@@ -200,5 +206,19 @@ label {
 
     display: flex;
     flex-direction: column;
+  }
+
+  .general-support {
+    width: 100%;
+  }
+
+  .general-support > div {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  form {
+    width: 17rem;
   }
 }
